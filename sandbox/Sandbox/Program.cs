@@ -1,28 +1,45 @@
 using System;
+using System.Runtime.CompilerServices;
 
 class Program
 {
     static void Main(string[] args)
     {
-        int x = 10;
-        int y = 30;
-        int z = 40;
+    string grade;
+    Console.WriteLine("What grade percentage did you get?");    
+    grade = Console.ReadLine();
+    int gradeNumber = int.Parse(grade);
+    string finalScore;
+    string passFail;
 
-        // If an if statement has multiple lines of code, curly braces are necessary
-        // If only one line is in an if statement, no need for curly braces
-        // If you want the or (||) go first, put the && in parenthesis
-        if ((x == 10 && y == 30) || z == 30)
+
+    if (gradeNumber >= 90)
         {
-            Console.WriteLine("x is 10");
-            Console.WriteLine("y is fun");
+         finalScore = "A";
+         passFail = "Pass";   
+        }
+    else if (gradeNumber >= 80)
+        {
+         finalScore = "B";
+         passFail = "Pass";
+        }
+    else if (gradeNumber >= 70)
+        {
+         finalScore = "C";
+         passFail = "Pass";
+        }
+    else if (gradeNumber >= 60)
+        {
+         finalScore = "D"; 
+         passFail = "Fail";  
         }    
-        else if (x == 20)
+    else
         {
-            Console.WriteLine("x is 20");
+         finalScore = "F"; 
+         passFail = "Fail";  
         }
-        else
-        {
-            Console.WriteLine("Default output");
-        }
+
+    Console.WriteLine(finalScore);
+    Console.WriteLine(passFail);            
     }
 }
