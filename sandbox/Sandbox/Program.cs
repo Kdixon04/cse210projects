@@ -5,41 +5,79 @@ class Program
 {
     static void Main(string[] args)
     {
-    string grade;
-    Console.WriteLine("What grade percentage did you get?");    
-    grade = Console.ReadLine();
-    int gradeNumber = int.Parse(grade);
-    string finalScore;
-    string passFail;
+        // int myNumber = int.Parse(numberString)
 
+        // While Loops
 
-    if (gradeNumber >= 90)
-        {
-         finalScore = "A";
-         passFail = "Pass";   
-        }
-    else if (gradeNumber >= 80)
-        {
-         finalScore = "B";
-         passFail = "Pass";
-        }
-    else if (gradeNumber >= 70)
-        {
-         finalScore = "C";
-         passFail = "Pass";
-        }
-    else if (gradeNumber >= 60)
-        {
-         finalScore = "D"; 
-         passFail = "Fail";  
-        }    
-    else
-        {
-         finalScore = "F"; 
-         passFail = "Fail";  
-        }
+        // bool done = false;
 
-    Console.WriteLine(finalScore);
-    Console.WriteLine(passFail);            
+        //while (! done)
+        // {
+        //    Console.Write("Are we done (y/n)? ");
+        //    done = Console.ReadLine() == "y";
+        // }
+
+        // CNTRL / Comments everything highlighted
+
+        // bool done;
+        // do
+        // {
+        //    Console.Write("Are we done (y/n)? ");
+        //     done = Console.ReadLine().ToLower() == "y";
+        // } while (! done);
+
+        
+        // for(double i = 0; i < 1.0; i += 0.01)
+        // {
+        //     Console.WriteLine(i);
+
+        // }
+
+        List<string> myFriends = new List<string> {"Bob", "Betty", "Bubba"};
+
+        myFriends.Add("Doug");
+
+        foreach(string friend in myFriends)
+        {
+            Console.WriteLine(friend);
+        }
+        // For Loop
+
+        // Lists List<int> = new List<int>()
+
+        // Functions
     }
+   
+   
+
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+   
+         
+   
 }
