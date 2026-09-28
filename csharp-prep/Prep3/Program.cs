@@ -19,7 +19,7 @@ class Program
             Random randomGenerator = new Random();
             int number = randomGenerator.Next(0, 11);
             Console.WriteLine(number);
-            
+
             // ask the user to guess   
             Console.WriteLine("Guess a number that I am thinking of (1-10): ");
             guess = Console.ReadLine();
@@ -27,11 +27,11 @@ class Program
 
             if (guessNumber > number)
             {
-                Console.WriteLine("Higher");
+                Console.WriteLine("Lower");
             }
             else if (guessNumber < number)
             {
-                Console.WriteLine("Lower");
+                Console.WriteLine("Higher");
             }
             else
             {
