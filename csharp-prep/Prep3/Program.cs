@@ -24,7 +24,8 @@ class Program
             Console.WriteLine("Guess a number that I am thinking of (1-10): ");
             guess = Console.ReadLine();
             int guessNumber = int.Parse(guess);
-
+        do 
+        {
             if (guessNumber > number)
             {
                 Console.WriteLine("Lower");
@@ -37,6 +38,8 @@ class Program
             {
                 Console.WriteLine("You guessed it!");
             }
+        } while (guessNumber != number);
+
         }    
         else
         {
