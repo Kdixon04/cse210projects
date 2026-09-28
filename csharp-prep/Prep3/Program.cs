@@ -26,7 +26,7 @@ class Program
         }    
         else
         {
-            
+            Console.WriteLine("Have a great day");
         }
     }
 }
