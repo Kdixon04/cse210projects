@@ -25,7 +25,7 @@ class Program
             guess = Console.ReadLine();
             int guessNumber = int.Parse(guess);
         
-        while (guessNumber != number)
+            while (guessNumber != number)
             {
                 if (guessNumber > number)
             {
@@ -35,9 +35,11 @@ class Program
             {
                 Console.WriteLine("Higher");
             }
-            else
+            else if (guessNumber == number)
             {
                 Console.WriteLine("You guessed it!");
+                break;
+                
             }
             }
         }    
