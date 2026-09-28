@@ -23,6 +23,15 @@ class Program
             Console.WriteLine("Guess a number that I am thinking of (1-100): ");
             guess = Console.ReadLine();
             int guessNumber = int.Parse(guess);
+
+            if (guessNumber > number)
+            {
+                Console.WriteLine("Higher");
+            }
+            else if (guessNumber < number)
+            {
+                Console.WriteLine("Lower");
+            }
         }    
         else
         {
