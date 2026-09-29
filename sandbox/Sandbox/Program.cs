@@ -3,49 +3,40 @@ using System.Runtime.CompilerServices;
 
 class Program
 {
+
+    // REMEMBER, Functions should do one thing and one thing only
+    static double AddNumbers(double x, int y)
+    {
+        return x + y;        
+    }
+
+    static string MyName()
+    {
+        return "Bob";
+    }
+
+    // void tells the computer that the function doesn't return a value
+    static void DisplayGreeting(string name)
+    {
+        Console.WriteLine($"Welcome {name}, it's nice to meet you");
+    }
+
     static void Main(string[] args)
     {
-        // int myNumber = int.Parse(numberString)
+        string myName = MyName();
+        DisplayGreeting(myName);
+        double total = AddNumbers(12.234, 20);
+        Console.WriteLine(total);
 
-        // While Loops
-
-        // bool done = false;
-
-        //while (! done)
-        // {
-        //    Console.Write("Are we done (y/n)? ");
-        //    done = Console.ReadLine() == "y";
-        // }
-
-        // CNTRL / Comments everything highlighted
-
-        // bool done;
-        // do
-        // {
-        //    Console.Write("Are we done (y/n)? ");
-        //     done = Console.ReadLine().ToLower() == "y";
-        // } while (! done);
-
-        
-        // for(double i = 0; i < 1.0; i += 0.01)
-        // {
-        //     Console.WriteLine(i);
-
-        // }
-
-        List<string> myFriends = new List<string> {"Bob", "Betty", "Bubba"};
-
-        myFriends.Add("Doug");
-
-        foreach(string friend in myFriends)
-        {
-            Console.WriteLine(friend);
-        }
-        // For Loop
-
-        // Lists List<int> = new List<int>()
-
-        // Functions
+        // int x = 10;
+        // int y = 30;
+        // int z = 40;
+        // if ((x == 10 || y == 30 ) && z == 30)
+        //{
+        //      Console.WriteLine("x is 10");
+        //      Console.Writeline("y is fun");    
+        //}
+        // else if (x == 20)
     }
    
    
