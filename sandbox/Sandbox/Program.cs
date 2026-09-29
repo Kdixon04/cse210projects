@@ -3,30 +3,40 @@ using System.Runtime.CompilerServices;
 
 class Program
 {
-
-    // REMEMBER, Functions should do one thing and one thing only
-    static double AddNumbers(double x, int y)
-    {
-        return x + y;        
-    }
-
-    static string MyName()
-    {
-        return "Bob";
-    }
-
-    // void tells the computer that the function doesn't return a value
-    static void DisplayGreeting(string name)
-    {
-        Console.WriteLine($"Welcome {name}, it's nice to meet you");
-    }
-
     static void Main(string[] args)
     {
-        string myName = MyName();
-        DisplayGreeting(myName);
-        double total = AddNumbers(12.234, 20);
-        Console.WriteLine(total);
+            Circle myCircle = new Circle();
+
+            myCircle._radius = 10;
+
+            double area = myCircle.GetArea();
+
+            Console.WriteLine(area);
+    }
+
+    // REMEMBER, Functions should do one thing and one thing only
+    // static double AddNumbers(double x, int y)
+    // {
+    //     return x + y;        
+    // }
+
+    // static string MyName()
+    // {
+    //     return "Bob";
+    // }
+
+    // // void tells the computer that the function doesn't return a value
+    // static void DisplayGreeting(string name)
+    // {
+    //     Console.WriteLine($"Welcome {name}, it's nice to meet you");
+    // }
+
+    // static void Main(string[] args)
+    // {
+    //     string myName = MyName();
+    //     DisplayGreeting(myName);
+    //     double total = AddNumbers(12.234, 20);
+    //     Console.WriteLine(total);
 
         // int x = 10;
         // int y = 30;
@@ -37,7 +47,7 @@ class Program
         //      Console.Writeline("y is fun");    
         //}
         // else if (x == 20)
-    }
+    
    
    
 
