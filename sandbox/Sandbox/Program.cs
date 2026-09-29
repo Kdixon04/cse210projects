@@ -9,9 +9,15 @@ class Program
 
             myCircle._radius = 10;
 
+            Circle myCircle2 = new Circle();
+
             double area = myCircle.GetArea();
 
+            double area2 = myCircle2.GetArea();
+
             Console.WriteLine(area);
+
+            Console.WriteLine(area2);
     }
 
     // REMEMBER, Functions should do one thing and one thing only
