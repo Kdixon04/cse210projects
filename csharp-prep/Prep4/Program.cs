@@ -7,6 +7,7 @@ class Program
     {
         List<int> numbers = new List<int>();
         int numberAppend = 1;
+        int sum = 0;
 
         while (numberAppend != 0)
         {
@@ -19,6 +20,13 @@ class Program
               numbers.Add(numberAppend);  
             }
         
+        foreach (int number in numbers)
+            {
+                sum += number;
+            }
+        
+        float mean = (float)sum / numbers.Count;
+
         }
         
     }
