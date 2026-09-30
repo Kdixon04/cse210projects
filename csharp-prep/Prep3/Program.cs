@@ -8,18 +8,18 @@ class Program
         string response;
         string guess;
 
-        
-            // Initiate the Game 
-            Console.Write("Do you want to play a game? ");
-            response = Console.ReadLine();
-            // if user accept the game 
-        if (response == "yes")
-        {
-            // generate a random number
+        // generate a random number
             Random randomGenerator = new Random();
             int number = randomGenerator.Next(0, 11);
             Console.WriteLine(number);
-
+        
+        //     // Initiate the Game 
+        //     Console.Write("Do you want to play a game? ");
+        //     response = Console.ReadLine();
+        //     // if user accept the game 
+        // if (response == "yes")
+        // {
+            
             // ask the user to guess   
             Console.WriteLine("Guess a number that I am thinking of (1-10): ");
             guess = Console.ReadLine();
@@ -38,14 +38,13 @@ class Program
             else if (guessNumber == number)
             {
                 Console.WriteLine("You guessed it!");
-                break;
                 
             }
             }
-        }    
-        else
-        {
-            Console.WriteLine("Have a great day");
-        }
+        //}    
+        // else
+        // {
+        //     Console.WriteLine("Have a great day");
+        // }
     }
 }
