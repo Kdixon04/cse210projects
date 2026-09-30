@@ -14,10 +14,11 @@ class Program
             string response = Console.ReadLine();
             numberAppend = int.Parse(response);    
             
-        }
-        else
-        {
-            
+            if (numberAppend != 0)
+            {
+              numbers.Add(numberAppend);  
+            }
+        
         }
         
     }
