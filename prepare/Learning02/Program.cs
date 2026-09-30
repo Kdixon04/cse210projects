@@ -10,6 +10,7 @@ class Program
         job1._company = "BYU-Idaho IT Department";
         job1._startYear = 2025;
         job1._endYear = 2028;
+        job1.DisplayJobDetails = $"{job1._jobTitle} ({job1._company}) {job1._startYear}-{job1._endYear}";
 
         Job job2 = new Job();
 
@@ -17,9 +18,12 @@ class Program
         job2._company = "Chick Fil-A Crossroads";
         job2._startYear = 2025;
         job2._endYear = 2025;
+        job2.DisplayJobDetails = $"{job2._jobTitle} ({job2._company}) {job2._startYear}-{job2._endYear}";
 
 
-        Console.WriteLine(job1);
-        Console.WriteLine(job2);
+        Console.WriteLine(job1.DisplayJobDetails);
+        Console.WriteLine(job2.DisplayJobDetails);
+
+        
     }
 }
