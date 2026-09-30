@@ -28,6 +28,10 @@ class Program
 
         myResume._personsName = "Keyan Dixon";
         myResume._jobsResume.Add(job1);
-        Console.WriteLine(myResume._jobsResume[0]._jobTitle);
+        Console.WriteLine(myResume._jobsResume[0].DisplayJobDetails);
+        myResume._jobsResume.Add(job2);
+        Console.WriteLine(myResume._jobsResume[1].DisplayJobDetails);
+        myResume.DisplayJobs = $"Jobs:\n{myResume._jobsResume[0]}\n{myResume._jobsResume[1]}";
+
     }
 }
