@@ -21,17 +21,17 @@ class Program
         job2.DisplayJobDetails = $"{job2._jobTitle} ({job2._company}) {job2._startYear}-{job2._endYear}";
 
 
-        Console.WriteLine(job1.DisplayJobDetails);
-        Console.WriteLine(job2.DisplayJobDetails);
+        //Console.WriteLine(job1.DisplayJobDetails);
+        //Console.WriteLine(job2.DisplayJobDetails);
 
         Resume myResume = new Resume();
 
         myResume._personsName = "Keyan Dixon";
         myResume._jobsResume.Add(job1);
-        Console.WriteLine(myResume._jobsResume[0].DisplayJobDetails);
+        //Console.Write(myResume._jobsResume[0].DisplayJobDetails);
         myResume._jobsResume.Add(job2);
-        Console.WriteLine(myResume._jobsResume[1].DisplayJobDetails);
-        myResume.DisplayJobs = $"Name:{myResume._personsName}\nJobs:\n{myResume._jobsResume[0]}\n{myResume._jobsResume[1]}";
+        //Console.Write(myResume._jobsResume[1].DisplayJobDetails);
+        myResume.DisplayJobs = $"Name:{myResume._personsName}\nJobs:\n{myResume._jobsResume[0].DisplayJobDetails}\n{myResume._jobsResume[1].DisplayJobDetails}";
 
         Console.WriteLine(myResume.DisplayJobs);
     }
