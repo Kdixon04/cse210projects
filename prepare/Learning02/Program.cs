@@ -24,6 +24,10 @@ class Program
         Console.WriteLine(job1.DisplayJobDetails);
         Console.WriteLine(job2.DisplayJobDetails);
 
-        
+        Resume myResume = new Resume();
+
+        myResume._personsName = "Keyan Dixon";
+        myResume._jobsResume.Add(job1);
+        Console.WriteLine(myResume._jobsResume[0]._jobTitle);
     }
 }
