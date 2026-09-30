@@ -31,7 +31,7 @@ class Program
         Console.WriteLine(myResume._jobsResume[0].DisplayJobDetails);
         myResume._jobsResume.Add(job2);
         Console.WriteLine(myResume._jobsResume[1].DisplayJobDetails);
-        myResume.DisplayJobs = $"Jobs:\n{myResume._jobsResume[0]}\n{myResume._jobsResume[1]}";
+        myResume.DisplayJobs = $"Name:{myResume._personsName}\nJobs:\n{myResume._jobsResume[0]}\n{myResume._jobsResume[1]}";
 
         Console.WriteLine(myResume.DisplayJobs);
     }
