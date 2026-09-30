@@ -11,7 +11,7 @@ class Program
         // generate a random number
             Random randomGenerator = new Random();
             int number = randomGenerator.Next(1, 100);
-            Console.WriteLine(number);
+            //Console.WriteLine(number);
         
         //     // Initiate the Game 
         //     Console.Write("Do you want to play a game? ");
@@ -21,7 +21,7 @@ class Program
         // {
             
             // ask the user to guess   
-            Console.WriteLine("Guess a number that I am thinking of (1-10): ");
+            Console.WriteLine("Guess a number that I am thinking of (1-100): ");
             guess = Console.ReadLine();
             int guessNumber = int.Parse(guess);
         
