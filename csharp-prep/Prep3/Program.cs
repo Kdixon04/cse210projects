@@ -27,6 +27,9 @@ class Program
         
             while (guessNumber != number)
             {
+                Console.WriteLine("Try again: ");
+                guessNumber = int.Parse(Console.ReadLine());
+                
                 if (guessNumber > number)
             {
                 Console.WriteLine("Lower");
