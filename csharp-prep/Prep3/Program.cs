@@ -5,12 +5,12 @@ class Program
 {
     static void Main(string[] args)
     {
-        string response;
+        // string response;
         string guess;
 
         // generate a random number
             Random randomGenerator = new Random();
-            int number = randomGenerator.Next(0, 11);
+            int number = randomGenerator.Next(1, 100);
             Console.WriteLine(number);
         
         //     // Initiate the Game 
@@ -31,18 +31,18 @@ class Program
                 guessNumber = int.Parse(Console.ReadLine());
                 
                 if (guessNumber > number)
-            {
+                {
                 Console.WriteLine("Lower");
-            }
-            else if (guessNumber < number)
-            {
+                }
+                else if (guessNumber < number)
+                {
                 Console.WriteLine("Higher");
-            }
-            else if (guessNumber == number)
-            {
+                }
+                else if (guessNumber == number)
+                {
                 Console.WriteLine("You guessed it!");
                 
-            }
+                }
             }
         //}    
         // else
