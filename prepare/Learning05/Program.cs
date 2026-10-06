@@ -38,16 +38,16 @@ class Program
             return numberSquared;
         }
 
-        static string DisplayResults(string userName, int numberSquared,)
-        {
-            
-        }
+        // static string DisplayResults(string userName, int numberSquared,)
+        // {
+
+        // }
 
         DisplayWelcome();
         PromptUserName();
         PromptUserNumber();
         PromptUserBirthYear(out int birthYear);
-        Console.WriteLine($"Your number squared is {SquareNumber}");
+        
 
     }
 }
