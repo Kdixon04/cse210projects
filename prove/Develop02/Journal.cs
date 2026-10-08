@@ -1,6 +1,6 @@
 class Journal
 {
-    public List<JournalEntry> _entries;
+    public List<JournalEntry> _entries = new List<JournalEntry>();
 
     public void DisplayJournal()
     {

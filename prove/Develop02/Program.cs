@@ -25,20 +25,20 @@ class Program
                     myJournal.CreateEntry();
                     // Console.WriteLine("Create");
                     // Call CreateJournalEntry()
-                break;
+                    break;
                 case 2:
                     myJournal.DisplayJournal();
                     // Console.WriteLine("Display");
                     // Call DisplayJournal()
-                break;
+                    break;
                 case 3:
                     Console.WriteLine("Save");
                     // Call ReadFromFile()
-                break;
+                    break;
                 case 4:
                     Console.WriteLine("Write");
                     // call WritetoFile()
-                break;
+                    break;
         }
         }
     }
