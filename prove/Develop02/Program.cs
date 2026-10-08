@@ -7,6 +7,8 @@ class Program
     {
         Menu myMenu = new Menu();
 
+        JournalEntry myEntry = new JournalEntry();
+
         int response = 0;
 
         myMenu.ProcessMenu();
@@ -19,11 +21,13 @@ class Program
             switch (response)
             {
                 case 1:
-                    Console.WriteLine("Create");
+                    myEntry.CreateJournalEntry();
+                    // Console.WriteLine("Create");
                     // Call CreateJournalEntry()
                 break;
                 case 2:
-                    Console.WriteLine("Display");
+                    myEntry.DisplayJournalEntry();
+                    // Console.WriteLine("Display");
                     // Call DisplayJournal()
                 break;
                 case 3:
