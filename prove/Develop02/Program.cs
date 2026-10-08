@@ -23,7 +23,6 @@ class Program
             {
                 case 1:
                     myJournal.CreateEntry();
-                    // Console.WriteLine("Create");
                     // Call CreateJournalEntry()
                     break;
                 case 2:
