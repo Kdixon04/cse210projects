@@ -7,7 +7,8 @@ class Program
     {
         Menu myMenu = new Menu();
 
-        JournalEntry myEntry = new JournalEntry();
+        Journal myJournal = new Journal();
+
 
         int response = 0;
 
@@ -21,12 +22,12 @@ class Program
             switch (response)
             {
                 case 1:
-                    myEntry.CreateJournalEntry();
+                    myJournal.CreateEntry();
                     // Console.WriteLine("Create");
                     // Call CreateJournalEntry()
                 break;
                 case 2:
-                    myEntry.DisplayJournalEntry();
+                    myJournal.DisplayJournal();
                     // Console.WriteLine("Display");
                     // Call DisplayJournal()
                 break;
