@@ -29,8 +29,10 @@ class Journal
             }
         }
     }
+    string filename = "Program.cs";
     public void ReadFromFile(string filename)
     {
+        
         string[] lines = System.IO.File.ReadAllLines(filename);
 
         foreach (string line in lines)
@@ -45,11 +47,12 @@ class Journal
             this.AddEntry(entry);
         }
     }
-    public override string ToString()
+     public override string ToString()
     {
         string outputString = "";
         outputString = $"{_date}#{_entryQuestion}#{_journalEntry}";
         
         return outputString;
     }
+
 }
