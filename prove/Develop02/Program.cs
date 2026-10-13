@@ -3,6 +3,11 @@ using System.Net;
 
 class Program
 {
+
+    private static string ObtainFileName(string prompt)
+    {
+        
+    }
     static void Main(string[] args)
     {
         Menu myMenu = new Menu();
@@ -26,12 +31,14 @@ class Program
                     // Call CreateJournalEntry()
                     break;
                 case 2:
+                    Console.WriteLine();
                     myJournal.DisplayJournal();
+                    Console.WriteLine();
                     // Console.WriteLine("Display");
                     // Call DisplayJournal()
                     break;
                 case 3:
-                    Console.WriteLine("Save");
+                    fileName
                     // Call ReadFromFile()
                     break;
                 case 4:

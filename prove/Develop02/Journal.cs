@@ -18,6 +18,11 @@ class Journal
         newEntry.CreateJournalEntry();
         _entries.Add(newEntry);
     }
+
+    public void CreateJournalEntry()
+    {
+        
+    }
     
     public void WriteToFile(string filename)
     {
@@ -43,8 +48,9 @@ class Journal
             string _entryQuestion = parts[1];
             string _entryText = parts[2];
 
-            JournalEntry entry = new JournalEntry(_date, _entryQuestion, _entryText);
-            this.AddEntry(entry);
+            JournalEntry entry = new JournalEntry();
+            entry.CreateEntryWithData(_date, _entryQuestion, _entryText);
+            _entries(entry);
         }
     }
      public override string ToString()

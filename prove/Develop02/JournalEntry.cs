@@ -1,11 +1,11 @@
 class JournalEntry
 // class should match name of file
 {
-    public string _date;
-    public string _prompt;
-    public string _response;
+    private string _date;
+    private string _prompt;
+    private string _response;
 
-
+    
 
     public void DisplayJournalEntry()
     {
@@ -28,5 +28,15 @@ class JournalEntry
         _response = Console.ReadLine();
     }
 
-    
+    public void CreateEntry()
+    {
+        string journalEntry
+    }
+
+    public void CreateEntryWithData(string date, string prompt, string response)
+    {
+        this._date = date;
+        this._entryQuestion = prompt;
+        this._journalEntry = response;
+    }
 }
