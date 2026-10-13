@@ -38,7 +38,7 @@ class Program
                     // Call DisplayJournal()
                     break;
                 case 3:
-                    fileName
+                
                     // Call ReadFromFile()
                     break;
                 case 4:

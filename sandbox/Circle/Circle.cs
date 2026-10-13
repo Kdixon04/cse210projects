@@ -2,7 +2,7 @@ class Circle
 
 {
 
-    public double _radius;
+    private double _radius;
 
 
 
@@ -13,5 +13,18 @@ class Circle
         return 3.14159 * _radius * _radius;
     }
 
+    // Gateway into Program.cs so it can access a private function
+    public void SetRadius(double radius)
+    {
+        if (radius < 0)
+        {
+            _radius = 1.0;
+            Console.WriteLine("Invalid value, must be >= 0");
+        }
+        else
+        {
+            _radius = radius;
+        }
 
+    }
 }

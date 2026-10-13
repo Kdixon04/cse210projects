@@ -20,7 +20,10 @@ class JournalEntry
         string[] prompts =
         {
             "How was your day?",
-            "Talk about someone you met?"
+            "Talk about someone you met?",
+            "How did you grow today?",
+            "What are you grateful for today?",
+            "When did you experience growth today?"
         };
         _date = DateTime.Now.ToString();
         _prompt = prompts[0];
