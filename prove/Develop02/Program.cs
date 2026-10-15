@@ -6,8 +6,11 @@ class Program
 
     private static string ObtainFileName(string prompt)
     {
-        
+        Console.WriteLine(prompt);
+        string fileName = Console.ReadLine();
+        return fileName;
     }
+    
     static void Main(string[] args)
     {
         Menu myMenu = new Menu();

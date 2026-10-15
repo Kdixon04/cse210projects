@@ -1,3 +1,4 @@
+using System.ComponentModel;
 using System.Security.Cryptography.X509Certificates;
 
 class Journal
@@ -35,6 +36,7 @@ class Journal
         }
     }
     string filename = "Program.cs";
+
     public void ReadFromFile(string filename)
     {
         
@@ -50,10 +52,10 @@ class Journal
 
             JournalEntry entry = new JournalEntry();
             entry.CreateEntryWithData(_date, _entryQuestion, _entryText);
-            _entries(entry);
+            _entries.Add(entry);
         }
     }
-     public override string ToString()
+     public override string ToString(_date, _entryQuestion, _journalEntry)
     {
         string outputString = "";
         outputString = $"{_date}#{_entryQuestion}#{_journalEntry}";

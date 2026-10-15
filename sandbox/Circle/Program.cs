@@ -7,6 +7,7 @@ class Program
     {
             Circle myCircle = new Circle();
 
+            // Setting a integer to a private function
             myCircle.SetRadius(10);
 
             Circle myCircle2 = new Circle();
