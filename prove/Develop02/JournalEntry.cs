@@ -33,7 +33,7 @@ class JournalEntry
 
     public void CreateEntry()
     {
-        string journalEntry
+        
     }
 
     public void CreateEntryWithData(string date, string prompt, string response)

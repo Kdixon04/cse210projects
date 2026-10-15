@@ -5,14 +5,25 @@ class Circle
     private double _radius;
 
 
-
-
-
     public double GetArea()
     {
         return 3.14159 * _radius * _radius;
     }
 
+    // public Circle()
+    // {
+    //     _radius = 1.0;
+    // }
+
+    public Circle(double radius)
+    {
+        SetRadius(radius);
+    }
+
+    // public Circle(int radius)
+    // {
+    //     SetRadius(radius);
+    // }
     // Gateway into Program.cs so it can access a private function
     public void SetRadius(double radius)
     {

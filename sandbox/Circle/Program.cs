@@ -5,12 +5,13 @@ class Program
 {
     static void Main(string[] args)
     {
-            Circle myCircle = new Circle();
+            Circle myCircle = new Circle(100);
 
             // Setting a integer to a private function
-            myCircle.SetRadius(10);
+            // Now that we have created our own constructor in Circle.cs
+                //myCircle.SetRadius(10);
 
-            Circle myCircle2 = new Circle();
+        //     Circle myCircle2 = new Circle();
 
             double area = myCircle.GetArea();
 
