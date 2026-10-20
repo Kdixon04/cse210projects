@@ -8,6 +8,19 @@ class World
     {
         _word = Word;
         _hidden = false;
-        
+
     }
+
+    public bool isHidden()
+    {
+        return _hidden;
+    }
+
+    public void Hide()
+    {
+        _hidden = true;
+    }
+
+    
+
 }
