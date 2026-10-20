@@ -4,6 +4,10 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Learning03 World!");
+        Fraction fraction_1 = new Fraction();
+        
+
+        Console.WriteLine($"{fraction_1}/{fraction_1}");
+
     }
 }
