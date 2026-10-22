@@ -31,6 +31,8 @@ class Scripture
         foreach(string w in tempWords)
         {
             Console.WriteLine(w);
+            Word tempWord = new Word(w);
+            tempWordList.Add(tempWord);
         }
 
         return tempWordList;
