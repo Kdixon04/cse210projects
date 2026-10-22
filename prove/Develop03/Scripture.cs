@@ -16,6 +16,14 @@ class Scripture
         // TODO - 
     }
 
+    public void ShowScripture()
+    {
+        foreach(World word in _words)
+        {
+            word.Display();
+        }
+    }
+
     //TODO - Add constructor for Scripture Reference
 
     /*******************************************
