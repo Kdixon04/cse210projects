@@ -13,12 +13,14 @@ class Scripture
     public Scripture(string bookName, int chapter, int startVerse, int endVerse, string text)
     {
        _words = ConvertToWordList(text);
+
+       _words[7].Hide();
         // TODO - 
     }
 
     public void ShowScripture()
     {
-        foreach(World word in _words)
+        foreach(Word word in _words)
         {
             word.Display();
         }

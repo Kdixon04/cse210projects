@@ -1,10 +1,10 @@
-class World
+class Word
 {
     
     private string _word;
     private bool _hidden;
 
-    public World(string Word)
+    public Word(string Word)
     {
         _word = Word;
         _hidden = false;
