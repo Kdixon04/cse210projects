@@ -1,6 +1,6 @@
 class Scripture
 {
-    private List<Word> words;
+    private List<Word> _words;
 
     // TODO - Add scripture Reference
 
