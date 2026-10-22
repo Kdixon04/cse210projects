@@ -1,6 +1,6 @@
 class Scripture
 {
-    private List<World> words;
+    private List<Word> words;
 
     // TODO - Add scripture Reference
 
@@ -12,6 +12,7 @@ class Scripture
     // Cannot have two constructors that have the same input () 
     public Scripture(string bookName, int chapter, int startVerse, int endVerse, string text)
     {
+        ConvertToWordList(text);
         // TODO - 
     }
 
