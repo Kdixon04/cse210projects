@@ -12,7 +12,7 @@ class Scripture
     // Cannot have two constructors that have the same input () 
     public Scripture(string bookName, int chapter, int startVerse, int endVerse, string text)
     {
-        ConvertToWordList(text);
+       _words = ConvertToWordList(text);
         // TODO - 
     }
 
@@ -30,7 +30,6 @@ class Scripture
         string[] tempWords = text.Split(' ');
         foreach(string w in tempWords)
         {
-            Console.WriteLine(w);
             Word tempWord = new Word(w);
             tempWordList.Add(tempWord);
         }

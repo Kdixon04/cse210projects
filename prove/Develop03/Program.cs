@@ -4,7 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        World myWord = new World("Secret");
+        Word myWord = new Word("Secret");
 
         // myWord.Display();
         // myWord.Hide();
