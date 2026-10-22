@@ -12,8 +12,9 @@ class Program
         // myWord.Display();
 
         Scripture myScripture = new Scripture("Moses", 1, 39,
-        "Behold, this is my work and my glory to bring to pass the immortalilty and eternal life of man")
-        
+        "Behold, this is my work and my glory to bring to pass the immortalilty and eternal life of man");
+        myScripture.ShowScripture();    
+       
     }
        
 }
