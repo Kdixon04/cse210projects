@@ -1,4 +1,4 @@
-class ScriptureReference
+/*class ScriptureReference
 {
     // private string _bookName;
     // private int _chapter;
@@ -30,3 +30,4 @@ class ScriptureReference
         
     // }
 }
+*/
