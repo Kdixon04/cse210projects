@@ -10,12 +10,12 @@ class World
         _hidden = false;
 
     }
-
+    // getter
     public bool isHidden()
     {
         return _hidden;
     }
-
+    // setter
     public void Hide()
     {
         _hidden = true;
