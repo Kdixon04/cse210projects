@@ -1,4 +1,4 @@
-class Assignment
+public class Assignment
 {
     
     private string _studentName;
@@ -6,11 +6,14 @@ class Assignment
 
     public string GetSummary()
     {
-        _studentName = "Samuel Bennet";
-        _topic = "Multiplication";
-
         string summary = $"{_studentName}, {_topic}";
 
         return  summary;   
+    }
+
+    public Assignment(string studentName, string topic)
+    {
+        _studentName = studentName;
+        _topic = topic;
     }
 }

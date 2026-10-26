@@ -4,10 +4,11 @@ class Program
 {
     static void Main(string[] args)
     {
-        Assignment myAssignment = new Assignment();
-        
-        myAssignment.GetSummary();
-        Console.WriteLine(myAssignment.GetSummary());
-        
+        // Assignment myAssignment = new Assignment();
+        MathAssignment mathAssignment = new MathAssignment("Roberto Rodriguez", "Fractions", "7.3", "8-19");
+        Console.WriteLine(mathAssignment);
+        // myAssignment.GetSummary();
+        // Console.WriteLine(myAssignment.GetSummary());
+
     }
 }
