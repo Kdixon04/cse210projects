@@ -2,6 +2,7 @@
 {
     public static void Main()
     {
-        Console.WriteLine("Hello World!");
+        Person myperson = new Person("John", " Revelator", 2050, 180);
+        Console.WriteLine(myperson.GetPersonInfo());
     }
 }
