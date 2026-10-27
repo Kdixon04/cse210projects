@@ -1,8 +1,8 @@
-/*class ScriptureReference
+class ScriptureReference
 {
-    // private string _bookName;
-    // private int _chapter;
-    // private int _verse;
+    private string _bookName;
+    private int _chapter;
+    private int _verse;
 
 
     public ScriptureReference(string name, int chapter, int verse)
@@ -20,13 +20,13 @@
         
     } 
 
-    // public string GetScriptureReference()
-    // {
-        
-    // }
+    public string GetScriptureReference()
+    {
+        return;
+    }
 
-    // public string GetScriptureReferenceString()
-    // {
-        
-    // }
-}*/
+    public string GetScriptureReferenceString()
+    {
+        return GetScriptureReferenceString();    
+    }
+}

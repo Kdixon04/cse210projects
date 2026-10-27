@@ -1,13 +1,17 @@
+using System.ComponentModel;
+
 class Scripture
 {
     private List<Word> _words;
 
+    private ScriptureReference _reference;
     // TODO - Add scripture Reference
 
     // Constructors are always public
     public Scripture(string bookName, int chapter, int verse, string text)
     {
-        // TODO - 
+        _reference = new ScriptureReference(bookName, chapter, verse);
+        _words = ConvertToWordList(text);
     }
     // Cannot have two constructors that have the same input () 
     public Scripture(string bookName, int chapter, int startVerse, int endVerse, string text)
@@ -46,4 +50,6 @@ class Scripture
 
         return tempWordList;
     }
+
+    
 }
