@@ -20,7 +20,17 @@
         
         foreach(Person person in myPeople)
         {
-            Console.WriteLine(person.GetPersonInfo());
+            // If person is Doctor (LowerCase doctor)
+            if(person is Doctor doctor)
+            {
+                Console.WriteLine(doctor.GetDoctorInfo());
+            }
+            // If person isn't doctor
+            else
+            {
+                Console.WriteLine(person.GetPersonInfo());    
+            }
+            
         }
     }
 }
