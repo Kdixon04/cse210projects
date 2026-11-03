@@ -7,7 +7,11 @@ class BaseActivity
 
     public void RunCountDownMessage(string message, int seconds)
     {
-        Console.WriteLine(message);
-        
+        for(int i = seconds; i>0; i--)
+        {   
+            Console.Clear();
+            Console.WriteLine($"{message} - {i} ");
+            Thread.Sleep(1000);
+        }
     }
 }
