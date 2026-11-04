@@ -1,4 +1,5 @@
 using System;
+using System.Security.Principal;
 
 class Program
 {
@@ -7,5 +8,6 @@ class Program
         BaseActivity activity = new BaseActivity();
 
         activity.RunCountDownMessage("Get Ready", 5);
+        activity.RunSpinnerMessage("Well Done", 5);
     }
 }
