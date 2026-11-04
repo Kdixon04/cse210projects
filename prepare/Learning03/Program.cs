@@ -28,8 +28,21 @@ class Program
         fraction3.SetTop(9);
         fraction3.SetBottom(6);
 
+        Console.WriteLine($"Fraction 3 Top {fraction3.GetTop()}");
+        Console.WriteLine($"Fraction 3 Bottom: {fraction3.GetBottom()}");
+
         Console.WriteLine("New Fraction 3: ");
         Console.WriteLine(fraction3.GetFractionString());
         Console.WriteLine(fraction3.GetDecimalValue());
+
+        Random random = new Random();
+        // Random addition
+        for (int i = 0; i < 20; i++){
+            
+            fraction_1.SetTop(random.Next(1, 11));
+            fraction_1.SetBottom(random.Next(1, 11));
+
+            Console.WriteLine($"Fraction {i + 1}: string: {fraction_1.GetFractionString()} Number: {fraction_1.GetDecimalValue()}");
+        }
     }
 }
