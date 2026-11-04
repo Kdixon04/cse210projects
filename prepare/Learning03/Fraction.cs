@@ -42,11 +42,15 @@ class Fraction
         _bottom = bottom;
     }
 
-    public string GetFractionString(string FractionString)
+    public string GetFractionString()
     {
-        FractionString = $"{_top}/{_bottom}";
+      return $"{_top}/{_bottom}";
 
-        return FractionString;
+    }
+
+    public double GetDecimalValue()
+    {
+        return (double)_top / _bottom;
     }
 }
 
