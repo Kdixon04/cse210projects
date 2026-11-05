@@ -4,7 +4,8 @@ class ReflectionActivity : BaseActivity
 
     private List<FlaggedString> _questions;
 
-    public ReflectionActivity(string name, string description)
+    public ReflectionActivity(string name, string description) 
+    : base ()
     {
         
     }

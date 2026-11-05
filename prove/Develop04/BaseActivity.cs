@@ -1,6 +1,7 @@
 class BaseActivity
 {
-
+    private string _name;
+    private string _description;
     private int _duration;
     private DateTime _endTime;
     public BaseActivity()
