@@ -53,7 +53,7 @@ class BaseActivity
             Console.Write("\b");
             Console.Write("*");
             Thread.Sleep(200);
-
+            Console.Write("\b");
         }
         Console.CursorVisible = true;
 
