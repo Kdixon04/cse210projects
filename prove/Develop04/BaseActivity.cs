@@ -35,5 +35,9 @@ class BaseActivity
             Console.Write("\b");
         }
         Console.CursorVisible = true;
+
+        
     }
+
+    
 }

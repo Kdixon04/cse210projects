@@ -22,7 +22,8 @@ class ScriptureReference
 
     public string GetScriptureReference()
     {
-        return;
+        
+        return GetScriptureReference();
     }
 
     public string GetScriptureReferenceString()
