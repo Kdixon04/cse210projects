@@ -1,12 +1,19 @@
 class BreathingActivity : BaseActivity
 {
+
+    // No attributes to initialize so the constructor is empty
+    public BreathingActivity() : base()
+    {
+        
+    }
     public void RunActivity()
     {
         // call StartActivity() method
-
-        DateTime endTime = DateTime.Now.AddSeconds(20);
         RunCountDownMessage("Get Ready", 5);
-        while (DateTime.Now < endTime)
+        StartTimer();
+        // DateTime endTime = DateTime.Now.AddSeconds(20); // Delete Later 
+        // while (DateTime.Now < endTime)
+        while (! HasTimerExpired()) // When Code is ready
         { 
             RunCountDownMessage("Breath in", 4);
             RunCountDownMessage("Breath out", 6);

@@ -1,10 +1,30 @@
 class BaseActivity
 {
+
+    private int _duration;
+    private DateTime _endTime;
     public BaseActivity()
     {
+        // For debug purposes we hard coded this
+        _duration = 30; // Replace with call to ObtainDuration();
         // COMPLETE
     }
 
+    public void StartActivity()
+    {
+        //Complete
+    }
+    public void StartTimer()
+    {
+        _endTime = DateTime.Now.AddSeconds(_duration);
+    }
+
+
+    public bool HasTimerExpired()
+    {
+        // Will return false until the return statement is true
+        return DateTime.Now > _endTime;
+    }
     public void RunCountDownMessage(string message, int seconds)
     {
         Console.CursorVisible = false;
@@ -27,16 +47,17 @@ class BaseActivity
         {
             Console.Write("+");
             Thread.Sleep(200);
-            // How to back up 1 character
             Console.Write("\b");
             Console.Write("-");
             Thread.Sleep(200);
-            // How to back up 1 character
             Console.Write("\b");
+            Console.Write("*");
+            Thread.Sleep(200);
+
         }
         Console.CursorVisible = true;
 
-        
+
     }
 
     
