@@ -7,8 +7,9 @@ class Doctor : Person
         _tools = tools;
     }
 
-    public string GetDoctorInfo()
+    //Overriding the virtual method 
+    public override string GetPersonInfo()
     {
-        return $"Tools: {_tools}: {GetPersonInfo()}";
+        return $"Tools: {_tools}: {base.GetPersonInfo()}";
     }
 }

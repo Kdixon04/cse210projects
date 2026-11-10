@@ -7,8 +7,8 @@ class Police : Person
         _weapon = weapon;
     }
 
-    public string GetPoliceInfo()
+    public override string GetPersonInfo()
     {
-        return $"Police: Weapon: {_weapon}: {GetPersonInfo()}";
+        return $"Police: Weapon: {_weapon}: {base.GetPersonInfo()}";
     }
 }

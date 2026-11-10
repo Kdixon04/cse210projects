@@ -2,19 +2,19 @@
 {
     public static void DisplayPersonInfo(Person person)
     {
-        if(person is Doctor doctor)
-            {
-                Console.WriteLine(doctor.GetDoctorInfo());
-            }
-            else if (person is Police police)
-            {
-                Console.WriteLine(police.GetPoliceInfo());
-            }
-            // If person isn't doctor
-            else
-            {
+    //     if(person is Doctor doctor)
+    //         {
+    //             Console.WriteLine(doctor.GetPersonInfo());
+    //         }
+    //         else if (person is Police police)
+    //         {
+    //             Console.WriteLine(police.GetPersonInfo());
+    //         }
+    //         // If person isn't doctor
+    //         else
+    //         {
                 Console.WriteLine(person.GetPersonInfo());    
-            }
+            // }
     }
     public static void Main()
     {
