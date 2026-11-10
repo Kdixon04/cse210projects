@@ -13,12 +13,13 @@
     //         // If person isn't doctor
     //         else
     //         {
+                Console.Write($"Salary: {person.GetSalary()} ");
                 Console.WriteLine(person.GetPersonInfo());    
             // }
     }
     public static void Main()
     {
-        Person myPerson = new Person("John", "Revelator", 2050, 180);
+        // Person myPerson = new Person("John", "Revelator", 2050, 180);
         // Console.WriteLine(myPerson.GetPersonInfo());
 
         Doctor myDoctor = new Doctor ("Bob", "Payne", 45, 279, "Scalpal");
@@ -30,7 +31,7 @@
 
         List<Person> myPeople = new List<Person>();
 
-        myPeople.Add(myPerson);
+        // myPeople.Add(myPerson);
         myPeople.Add(myDoctor);
         myPeople.Add(myPolice);
         
@@ -50,4 +51,5 @@
             DisplayPersonInfo(person);            
         }
     }
+
 }
