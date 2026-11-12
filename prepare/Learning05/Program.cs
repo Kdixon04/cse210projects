@@ -9,7 +9,7 @@ class Program
      Console.WriteLine(square.GetColor());
      Console.WriteLine(square.GetArea());
 
-     Rectangle rectangle = new Rectangle("blue", 9.5);
+     Rectangle rectangle = new Rectangle("blue", 9.5, 7.5);
      Console.WriteLine(rectangle.GetColor());
      Console.WriteLine(rectangle.GetArea());
 
@@ -17,5 +17,11 @@ class Program
      Console.WriteLine(circle.GetColor());
      Console.WriteLine(circle.GetArea());
 
+    List<Shape> shapes = new List<Shape>();
+    shapes.Add(square);
+    shapes.Add(rectangle);
+    shapes.Add(circle); 
+
+    Console.WriteLine(shapes);
     }
 }

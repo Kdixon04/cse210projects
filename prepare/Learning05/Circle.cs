@@ -2,16 +2,16 @@ using System.Reflection.Metadata.Ecma335;
 
 class Circle : Shape
 {
-    private double _side;
+    private double _radius;
 
-    public Circle(string color, double side) : base(color)
+    public Circle(string color, double radius) : base(color)
     {
-        _side = side;
+        _radius = radius;
 
     }
 
     public override double GetArea()
     {
-        return _side * _side;
+        return _radius * _radius;
     }
 }
