@@ -1,3 +1,5 @@
+using System.Reflection.Metadata.Ecma335;
+
 class Square : Shape
 {
     private double _side;
@@ -9,6 +11,7 @@ class Square : Shape
 
     public override double GetArea()
     {
-        return 5.5;
+     
+        return _side * _side;
     }
 }

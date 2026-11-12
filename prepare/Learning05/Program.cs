@@ -4,7 +4,10 @@ class Program
 {
     static void Main(string[] args)
     {
-     Console.WriteLine("Hello World!");   
+     Square square = new Square("red", 7.5);   
+
+     Console.WriteLine(square.GetColor());
+     Console.WriteLine(square.GetArea());
 
     }
 }
