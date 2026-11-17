@@ -24,6 +24,6 @@ class BaseGoal
 
     public virtual string GetConsoleString()
     {
-        return $"[] Goal Name: {_name}";
+        return $"[] Goal Name: {_name}; {_description}";
     }
 }
