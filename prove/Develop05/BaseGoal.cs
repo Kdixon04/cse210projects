@@ -1,7 +1,8 @@
 class BaseGoal
 {
     private string _name;
-    private string _description;
+    
+    // private string _description;
 
     public BaseGoal()
     {
