@@ -10,6 +10,7 @@ class BaseGoal
     {
         SetName();
         SetDescription();
+        SetPoints();
     }
 
     private void SetName()
@@ -24,7 +25,7 @@ class BaseGoal
         _description = Console.ReadLine();   
     }
 
-    private void SetPoint()
+    private void SetPoints()
     {
         Console.Write($"What are the points for {_name} goal: ");
         _points = int.Parse(Console.ReadLine());
@@ -32,6 +33,6 @@ class BaseGoal
 
     public virtual string GetConsoleString()
     {
-        return $"[] Goal Name: {_name}; {_description}";
+        return $"[] Goal Name: {_name}, {_description} points: {_points}";
     }
 }
