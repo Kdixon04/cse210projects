@@ -8,4 +8,10 @@ class SimpleGoal : BaseGoal
     public SimpleGoal() : base ("Simple Goal")
     {
     }
+
+    public override int RecordEvent()
+    {
+        //TO DO
+        return 0;
+    }
 }

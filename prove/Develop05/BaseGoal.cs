@@ -1,4 +1,4 @@
-class BaseGoal
+abstract class BaseGoal
 {
     private string _name;
     
@@ -46,8 +46,13 @@ class BaseGoal
     }
 
     public virtual string GetConsoleString()
-    {
-        return $"[] Goal Name: {_name}, {_description} points: {_points}";
+    {   
+        string completeString = " ";
+
+        if (_complete)
+            completeString = "X";
+
+        return $"[{completeString}] Goal Name: {_name}, {_description} points: {_points}";
     }
 
     public int MarkComplete()
@@ -55,4 +60,7 @@ class BaseGoal
         _complete = true;
         return _points;
     }
+    
+    public abstract int RecordEvent();
+
 }
