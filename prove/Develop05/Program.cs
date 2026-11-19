@@ -9,5 +9,10 @@ class Program
 
         SimpleGoal mySimpleGoal = new SimpleGoal();
         Console.WriteLine(mySimpleGoal.GetConsoleString());
+        mySimpleGoal.MarkComplete();
+        Console.WriteLine(mySimpleGoal.GetConsoleString());
+
+
+        
     }
 }
